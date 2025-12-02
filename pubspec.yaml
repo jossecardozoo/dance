@@ -37,6 +37,9 @@ dependencies:
   firebase_core: ^4.2.1
   firebase_auth: ^6.1.2
   cloud_firestore: ^6.1.0
+  material_symbols_icons: ^4.2874.0
+  font_awesome_flutter: ^10.12.0
+  flutter_svg: ^2.2.3
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +67,7 @@ flutter:
   assets:
     - assets/google_icon.png
     - assets/facebook_icon.png
+    - assets/google_logo.svg
 
   #   - images/a_dot_ham.jpeg
 

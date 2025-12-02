@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import '../fields/login_field.dart';
 import '../theme/app_colors.dart';
 import '../buttons/login_button.dart';
-import '../theme/app_colors.dart';
+import '../buttons/social_login_buttons.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -53,40 +53,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 onPressed: () async {
                   String email = _emailController.text;
                   String password = _passwordController.text;
+                  Navigator.pushReplacementNamed(context, '/home');
                 },
                 color: Color(0xFF8B5CF6),
               ),
               const SizedBox(height: 20),
               Text('O continuar con', style: TextStyle(color: Colors.white)),
               const SizedBox(height: 20),
-              LoginButton(
-                text: 'Google',
-                onPressed: () async {
-                  String email = _emailController.text;
-                  String password = _passwordController.text;
-                },
-                color: Colors.white.withOpacity(0.12),
-                icon: Image.asset(
-                  'assets/google_icon.png',
-                  width: 30,
-                  height: 30,
-                  fit: BoxFit.contain,
-                ),
-              ),
-              const SizedBox(height: 20),
-              LoginButton(
-                text: 'Facebook',
-                onPressed: () async {
-                  String email = _emailController.text;
-                  String password = _passwordController.text;
-                },
-                color: Colors.white.withOpacity(0.12),
-                icon: Image.asset(
-                  'assets/facebook_icon.png',
-                  width: 30,
-                  height: 30,
-                  fit: BoxFit.contain,
-                ),
+              SocialLoginButtons(
+                isGoogleLoading: false,
+                onGooglePressed: () async {},
+                isFacebookLoading: false,
+                onFacebookPressed: () async {},
               ),
               TextButton(
                 onPressed: () {
