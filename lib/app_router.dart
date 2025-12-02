@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'screens/login.dart';
 import 'screens/register.dart';
+import 'main/main_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -17,7 +18,11 @@ class AppRouter {
           builder: (_) => const RegisterScreen(),
           settings: settings,
         );
-
+      case '/home':
+        return MaterialPageRoute(
+          builder: (_) => const MainScreen(),
+          settings: settings,
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const LoginScreen(),
