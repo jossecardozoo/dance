@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "996598872036",
+    "project_id": "dance-b3133",
+    "storage_bucket": "dance-b3133.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996598872036:android:a54ab61d74775ae1ac39f1",
+        "android_client_info": {
+          "package_name": "com.example.dance_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmLQG25GyHH67hw89_8xOpLrephSYlyNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
