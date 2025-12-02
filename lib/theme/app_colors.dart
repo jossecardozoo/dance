@@ -13,4 +13,6 @@ class AppColors {
 
   static const Color textLight = Colors.white;
   static const Color textMuted = Color(0xFFD9CFFF);
+
+  static const homeBackground = Color(0xFF25243F);
 }
